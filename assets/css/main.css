@@ -22,8 +22,8 @@
   height: 100%;
   -webkit-box-shadow: 5px 15px 20px #6e6e6e;
           box-shadow: 5px 15px 20px #6e6e6e;
-  -webkit-transition: height 1000ms ease-in-out;
-  transition: height 1000ms ease-in-out; }
+  -webkit-transition: height 800ms ease-in-out;
+  transition: height 800ms ease-in-out; }
   .main-wrapper h1 {
     margin: 0;
     color: white;
@@ -31,23 +31,31 @@
     font-size: 2.5em;
     font-family: cursive;
     margin-bottom: 20px; }
-  .main-wrapper button {
+  .main-wrapper .button {
     width: 50px;
     height: 50px;
     margin-bottom: 20px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     outline: none;
-    border: 5px solid #075bf7;
-    cursor: pointer; }
+    border: 2px solid #075bf7;
+    cursor: pointer;
+    background-image: url(../images/Wikipedia.png);
+    background-size: cover;
+    background-repeat: no-repeat; }
   .main-wrapper .search {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
+    font-size: medium;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     border: 3px solid orange;
     outline: none;
     margin-bottom: 10px;
+    background-image: url(../images/search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
     -webkit-transition: width 300ms ease-in-out, -webkit-border-radius 500ms ease-in-out;
     transition: width 300ms ease-in-out, -webkit-border-radius 500ms ease-in-out;
     transition: width 300ms ease-in-out, border-radius 500ms ease-in-out;
@@ -64,6 +72,7 @@
 .search-focus {
   width: 300px;
   height: 38px;
+  font-size: medium;
   -webkit-border-radius: 0;
           border-radius: 0;
   border: 3px solid orange;
@@ -71,7 +80,7 @@
   margin-bottom: 10px; }
 
 .shrink {
-  height: 22%; }
+  height: 30%; }
 
 body {
   margin: 0;
