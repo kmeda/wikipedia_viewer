@@ -16,18 +16,8 @@ $('input').keyup(function() {
       $('input').removeClass('search-focus');
 
     }
-    //$('input').val('');
 });
-/*
-$('.button').on('click', function(){
 
-  $('.main-wrapper').removeClass('shrink');
-  $('input').addClass('search');
-  $('input').removeClass('search-focus');
-  $('input').val('');
-
-});
-*/
 });
 
 //References
