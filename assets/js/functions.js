@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
 $('input').keypress(function(ev){
-  var keycode = (ev.keyCode ? ev.keyCode : ev.which);
-  if (keycode == '13') {
+  if (ev.keyCode == '13') {
     $('.main-wrapper').addClass('shrink');
   }
   $(this).addClass('search-focus');
@@ -10,12 +9,25 @@ $('input').keypress(function(ev){
 
 });
 
+$('input').keyup(function() {
+    if(!this.value){
+      $('.main-wrapper').removeClass('shrink');
+      $('input').addClass('search');
+      $('input').removeClass('search-focus');
+
+    }
+    //$('input').val('');
+});
+/*
 $('.button').on('click', function(){
+
   $('.main-wrapper').removeClass('shrink');
   $('input').addClass('search');
   $('input').removeClass('search-focus');
-});
+  $('input').val('');
 
+});
+*/
 });
 
 //References
